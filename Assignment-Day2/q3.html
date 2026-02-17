@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning Course Registration Portal</title>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <h1>E-Learning Certification Portal</h1>
+    <p>Upgrade your skills with our professional certification programs.</p>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Courses</a> |
+        <a href="#">Register</a> |
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+    <!-- ===== Introduction Video Section ===== -->
+    <section>
+        <h2>Course Introduction Video</h2>
+
+        <video controls width="500" poster="poster.jpg">
+            <source src="intro.mp4" type="video/mp4">
+            <source src="intro.webm" type="video/webm">
+            <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- ===== Registration Form Section ===== -->
+    <section>
+        <h2>Course Registration</h2>
+
+        <form>
+
+            <!-- Course Selection with Datalist -->
+            <label for="course">Select Course:</label>
+            <input list="courses" id="course" name="course" required>
+            <datalist id="courses">
+                <option value="Full Stack Java">
+                <option value="Python Development">
+                <option value="Web Development">
+                <option value="Data Science">
+            </datalist>
+
+            <br><br>
+
+            <!-- Batch Month -->
+            <label for="batch">Select Batch Month:</label>
+            <input type="month" id="batch" name="batch" required>
+
+            <br><br>
+
+            <!-- Session Timing -->
+            <label for="session">Preferred Session Time:</label>
+            <input type="time" id="session" name="session" required>
+
+            <br><br>
+
+            <!-- Skill Level Rating -->
+            <label for="skill">Rate Your Skill Level:</label>
+            <input type="range" id="skill" name="skill" min="1" max="10">
+
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Enroll Now">
+
+        </form>
+    </section>
+
+    <!-- ===== Progress Section ===== -->
+    <section>
+        <h2>Enrollment Progress</h2>
+        <progress value="50" max="100"></progress>
+        <p>50% Completed</p>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>&copy; 2026 E-Learning Portal | Contact: info@elearning.com</p>
+</footer>
+
+</body>
+</html>
