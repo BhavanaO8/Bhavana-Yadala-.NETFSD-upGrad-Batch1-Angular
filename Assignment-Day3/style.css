@@ -1,0 +1,266 @@
+/* =========================
+   UNIVERSAL SELECTOR
+========================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   ELEMENT SELECTOR
+========================= */
+h1, p {
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   GROUP SELECTOR
+========================= */
+h1, h2, h3 {
+    color: #0066cc;
+}
+
+/* =========================
+   HEADER (Common)
+========================= */
+header {
+    background-color: #cce6ff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* =========================
+   BANNER / HERO
+========================= */
+.banner, #hero {
+    background-color: #e6f2ff;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   SERVICE CARD (Assignment 1)
+========================= */
+.service-card {
+
+    padding: 20px;
+
+    margin: 15px;
+
+    border: 2px solid #3399ff;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    box-sizing: border-box;
+
+    width: 250px;
+
+    display: inline-block;
+
+}
+
+/* Descendant selector */
+.services p {
+    color: gray;
+}
+
+/* =========================
+   CONTACT SECTION (ID selector)
+========================= */
+#contact {
+
+    background-color: #f2f9ff;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+}
+
+/* Attribute selector */
+input[type="text"] {
+
+    padding: 10px;
+
+    margin: 5px;
+
+    border-radius: 5px;
+
+    border: 1px solid gray;
+
+}
+
+/* =========================
+   BUTTON HOVER
+========================= */
+button {
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    border: none;
+
+    background-color: #0073e6;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: green;
+
+    color: white;
+
+}
+
+/* =========================
+   COURSE CARD (Assignment 2)
+========================= */
+.course {
+
+    border: 2px solid gray;
+
+    padding: 15px;
+
+    margin: 15px;
+
+    width: 220px;
+
+    display: inline-block;
+
+    border-radius: 10px;
+
+}
+
+/* Child selector */
+.course > h3 {
+
+    color: darkblue;
+
+}
+
+/* Adjacent sibling selector */
+h3 + p {
+
+    color: gray;
+
+}
+
+/* First child selector */
+.course:first-child {
+
+    background-color: lightyellow;
+
+}
+
+/* Last child bonus */
+.course:last-child {
+
+    background-color: lightpink;
+
+}
+
+/* =========================
+   PRODUCT CARD (Assignment 3)
+========================= */
+.product-card {
+
+    padding: 15px;
+
+    margin: 15px;
+
+    border: 1px solid gray;
+
+    width: 220px;
+
+    box-shadow: 2px 2px 8px gray;
+
+    display: inline-block;
+
+    border-radius: 10px;
+
+    transition: transform 0.3s;
+
+}
+
+/* Descendant selector */
+.product-card img {
+
+    width: 100%;
+
+}
+
+/* Attribute selector */
+input[type="checkbox"] {
+
+    margin: 10px;
+
+}
+
+/* Hover pseudo class */
+.product-card:hover {
+
+    transform: scale(1.05);
+
+}
+
+/* nth child selector */
+.product-card:nth-child(even) {
+
+    background-color: #e6f2ff;
+
+}
+
+/* =========================
+   CART SECTION
+========================= */
+#cart {
+
+    background-color: lightgray;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+
+    background-color: #cce6ff;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+}
